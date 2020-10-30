@@ -1,0 +1,31 @@
+.pane {
+    -fx-background-image: url("../images/trianglify-lowres.png");
+    -fx-background-repeat: stretch;
+    -fx-background-size: 100% 100%;
+    -fx-background-position: center center;   
+}
+
+.button, .text-field, .spinner, .choise-box { 
+    -fx-focus-color: transparent; 
+}
+
+.button:hover, .chart-line-symbol:hover, .choise-box:hover {
+    -fx-cursor: hand;
+}
+
+.text-field:hover {
+    -fx-cursor: text;
+}
+
+.label {
+    -fx-font-family: "droid-mono";
+    -fx-font-weight: bold;
+}
+
+.button{
+    -fx-font-family: "droid-mono";
+    -fx-background-color: #118817;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-effect: dropshadow(three-pass-box, gray, 10px, 0, 0, 0);
+}

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" styleClass="pane" stylesheets="@../styles/mainstyle.css" xmlns="http://javafx.com/javafx/15" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControlModificationFunction">
+   <children>
+      <VBox alignment="CENTER" prefHeight="400.0" prefWidth="600.0" spacing="40.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="76.0" prefWidth="600.0">
+               <children>
+                  <Label prefHeight="38.0" prefWidth="242.0" text="File of tabulated function">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Label>
+                  <TextField fx:id="functionPath" focusTraversable="false" prefHeight="30.0" prefWidth="186.0" />
+                  <Button focusTraversable="false" mnemonicParsing="false" onAction="#chooseFile" prefHeight="15.0" prefWidth="36.0" text="...">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+            <Button focusTraversable="false" mnemonicParsing="false" onAction="#showTable" prefHeight="47.0" prefWidth="407.0" text="Show table">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button focusTraversable="false" mnemonicParsing="false" onAction="#showGraphic" prefHeight="50.0" prefWidth="407.0" text="Show graphic">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+            <Button focusTraversable="false" layoutX="107.0" layoutY="300.0" mnemonicParsing="false" onAction="#back" prefHeight="50.0" prefWidth="407.0" text="Back">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

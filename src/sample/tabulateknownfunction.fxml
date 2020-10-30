@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" styleClass="pane" stylesheets="@../styles/mainstyle.css" xmlns="http://javafx.com/javafx/15" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControlTabulateFunction">
+    <children>
+        <Button layoutX="23.0" layoutY="341.0" mnemonicParsing="false" onAction="#back" pickOnBounds="false" prefHeight="45.0" prefWidth="388.0" text="Cancel">
+            <font>
+                <Font size="24.0" />
+            </font></Button>
+        <MenuBar prefHeight="26.0" prefWidth="602.0">
+            <menus>
+                <Menu mnemonicParsing="false" text="File">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#save" text="Rewrite" />
+                        <MenuItem mnemonicParsing="false" onAction="#create" text="Create" />
+                    </items>
+                </Menu>
+                <Menu mnemonicParsing="false" text="Show">
+                    <items>
+                        <MenuItem mnemonicParsing="false" onAction="#showGrafic" text="Show graphic" />
+                        <MenuItem mnemonicParsing="false" onAction="#showTable" text="Show table" />
+                    </items>
+                </Menu>
+            <Menu mnemonicParsing="false" text="Help">
+               <items>
+                  <MenuItem mnemonicParsing="false" onAction="#help" text="Help" />
+               </items></Menu>
+            </menus>
+        </MenuBar>
+        <VBox layoutY="25.0" prefHeight="304.0" prefWidth="433.0" spacing="30.0" AnchorPane.bottomAnchor="71.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="169.0" AnchorPane.topAnchor="25.0">
+            <children>
+                <HBox alignment="CENTER_LEFT" prefHeight="42.0" prefWidth="414.0">
+                    <children>
+                        <Label prefHeight="27.0" prefWidth="201.0" text="Function">
+                            <font>
+                                <Font size="18.0" />
+                            </font></Label>
+                  <TextField fx:id="fileFunction" focusTraversable="false" prefHeight="26.0" prefWidth="162.0" />
+                  <Button focusTraversable="false" mnemonicParsing="false" onAction="#chooseFile" prefHeight="26.0" prefWidth="29.0" text="..." />
+                    </children>
+                </HBox>
+                <HBox alignment="CENTER_LEFT" prefHeight="81.0" prefWidth="580.0" spacing="20.0">
+                    <children>
+                        <Label prefHeight="38.0" prefWidth="181.0" text="Left domain border">
+                            <font>
+                                <Font size="18.0" />
+                            </font>
+                        </Label>
+                        <TextField fx:id="leftBorder" alignment="CENTER_RIGHT" focusTraversable="false" pickOnBounds="false" prefHeight="30.0" prefWidth="188.0" text="0" />
+                    </children>
+                    <VBox.margin>
+                        <Insets />
+                    </VBox.margin>
+                </HBox>
+                <HBox alignment="CENTER_LEFT" layoutX="30.0" layoutY="10.0" prefHeight="79.0" prefWidth="580.0" spacing="20.0">
+                    <children>
+                        <Label prefHeight="38.0" prefWidth="181.0" text="Right domain border">
+                            <font>
+                                <Font size="18.0" />
+                            </font>
+                        </Label>
+                        <TextField fx:id="rightBorder" alignment="CENTER_RIGHT" focusTraversable="false" prefHeight="29.0" prefWidth="192.0" text="1" />
+                    </children>
+                    <VBox.margin>
+                        <Insets />
+                    </VBox.margin>
+                </HBox>
+                <HBox alignment="CENTER_LEFT" layoutX="30.0" layoutY="140.0" prefHeight="82.0" prefWidth="580.0" spacing="20.0">
+                    <children>
+                        <Label prefHeight="38.0" prefWidth="181.0" text="Points count">
+                            <font>
+                                <Font size="18.0" />
+                            </font>
+                        </Label>
+                        <Spinner fx:id="pointsCount" focusTraversable="false" pickOnBounds="false" prefHeight="27.0" prefWidth="189.0" />
+                    </children>
+                </HBox>
+            </children>
+            <padding>
+                <Insets left="20.0" top="30.0" />
+            </padding>
+        </VBox>
+        <ImageView fitHeight="209.0" fitWidth="162.0" layoutX="433.0" layoutY="96.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/itmem.jpg-large.png" />
+         </image></ImageView>
+    </children>
+</AnchorPane>

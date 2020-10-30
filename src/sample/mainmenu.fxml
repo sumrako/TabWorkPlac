@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" styleClass="pane" stylesheets="@../styles/mainstyle.css" xmlns="http://javafx.com/javafx/15" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControlMainMenu">
+    <children>
+        <VBox alignment="CENTER" cacheShape="false" focusTraversable="true" prefHeight="400.0" prefWidth="600.0" spacing="10.0" styleClass="pane" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+            <children>
+                <Label alignment="CENTER" prefHeight="80.0" prefWidth="600.0" text="TabWorkPlace" textAlignment="CENTER">
+                    <font>
+                        <Font name="Droid Sans Mono" size="36.0" />
+                    </font>
+                </Label>
+                <Button mnemonicParsing="false" onAction="#createNewFunction" prefHeight="38.0" prefWidth="301.0" text="Create new tabulated function" />
+                <Button layoutX="10.0" layoutY="73.0" mnemonicParsing="false" onAction="#showTabulatedFunction" prefHeight="38.0" prefWidth="302.0" text="Download tabulated function" />
+                <Button layoutX="10.0" layoutY="73.0" mnemonicParsing="false" onAction="#help" prefHeight="38.0" prefWidth="302.0" text="Help" />
+                <Button layoutX="10.0" layoutY="150.0" mnemonicParsing="false" onAction="#about" prefHeight="38.0" prefWidth="302.0" text="About" />
+            </children>
+            <cursor>
+                <Cursor fx:constant="DEFAULT" />
+            </cursor>
+        </VBox>
+    </children>
+</AnchorPane>

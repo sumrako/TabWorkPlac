@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" styleClass="pane" stylesheets="@../styles/mainstyle.css" xmlns="http://javafx.com/javafx/15" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControlCreateFunctionMenu">
+   <children>
+      <ImageView fitHeight="217.0" fitWidth="336.0" layoutX="181.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/zadrot.jpg" />
+         </image></ImageView>
+      <VBox alignment="CENTER" layoutY="273.0" prefHeight="120.0" prefWidth="600.0" AnchorPane.bottomAnchor="7.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="273.0">
+         <children>
+            <Label prefHeight="62.0" prefWidth="590.0" text="Created by Andrei Arnautov">
+               <font>
+                  <Font name="Book Antiqua" size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="10.0" />
+               </VBox.margin>
+            </Label>
+            <Label layoutX="10.0" layoutY="10.0" prefHeight="62.0" prefWidth="590.0" text="E-mail: andreiarnautov@gmail.com">
+               <font>
+                  <Font name="Book Antiqua" size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="10.0" />
+               </VBox.margin>
+            </Label>
+            <Label layoutX="10.0" layoutY="72.0" prefHeight="62.0" prefWidth="590.0" text="Samara University 2020">
+               <font>
+                  <Font name="Book Antiqua" size="18.0" />
+               </font>
+               <VBox.margin>
+                  <Insets left="10.0" />
+               </VBox.margin>
+            </Label>
+            <Button focusTraversable="false" mnemonicParsing="false" onAction="#back" prefHeight="26.0" prefWidth="161.0" text="Back" textAlignment="CENTER">
+               <VBox.margin>
+                  <Insets left="10.0" />
+               </VBox.margin>
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
